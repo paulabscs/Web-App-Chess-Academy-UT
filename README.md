@@ -14,11 +14,11 @@ Incorporated distributed services are designed to utilize OOP principles, specif
 
 ### Structure
 
--Database Layer: /Data
--ORM Layer: /Dtos
--Model Layer: /Models
--Controller Layer: /Controllers
--View Layer: /wwwroot
+- Database Layer: /Data
+- ORM Layer: /Dtos
+- Model Layer: /Models
+- Controller Layer: /Controllers
+- View Layer: /wwwroot
 
 ## Endpoints
 
