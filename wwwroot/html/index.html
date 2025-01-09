@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="/css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/x-icon" href="/assets/Logos/Logo-192x192.png">
+</head>
+<body onload="load_emojis();check_session_status();">
+    <div class="topbar">
+        <img class="logo" src="/assets/Logos/Logo.png" alt="">
+        <button id="Home Button" class="getpage" onclick="section(this, 'Home')">Home</button>
+        <button id="Academy Shop Button" class="getpage" onclick="section(this, 'Academy Shop')">Academy Shop</button>
+        <button id="User Registration Button" class="getpage" onclick="section(this, 'User Registration')">User Registration</button>
+        <button id="User Login Button" class="getpage" onclick="section(this, 'User Login')">User Login</button>
+        <button id="Logout" style="display: none;" class="hiddenpage" onclick="user_logout()">Logout</button>
+        <button id="Game of Chess Button" class="getpage" onclick="section(this, 'Game of Chess')">Game of Chess</button>
+        <button id="Guest Book Button" class="getpage" onclick="section(this, 'Guest Book')">Guest Book</button>
+        <button id="Login Status" class="status">You are not logged in.</button>
+    </div>
+
+    <div id="Container" class="topline"></div>
+
+    <br><br><br>
+
+    <div id="Home" class="centered">
+        <p class="title">Home</p>
+        <p>Testing. We will venture deep into the realm of a more traditional game.</p>
+        <p id="version_display_obj">Version:</p>
+    </div>
+
+    <div id="Academy Shop" class="centered">
+        <p class="title">Academy Shop</p>
+        <p>Welcome to the Academy Shop.</p> 
+        <div id="shop_data"></div>
+    </div>
+
+    <div id="User Registration" class="centered">
+        <p class="title">User Registration</p>
+        <p>Register here.</p>
+        <div>
+            <input id="UR_username" class="entered" placeholder="Enter Username">
+            <input id="UR_password" class="entered" placeholder="Enter Password">
+            <input id="UR_address" class="entered" placeholder="Enter Address">
+        </div>
+        <div class="leftline"></div>
+        <div>
+            <button id="UR_enter" class="postpage" onclick="user_registration_continue()">Continue</button>
+        </div>
+        <p id="UR_return"></p>
+    </div>
+
+    <div class="centered" id="User Login">
+        <p class="title">User Login</p>
+        <p id="UL_info">Login here.</p>
+        <div id="UL_form">
+            <input id="UL_username" class="entered" placeholder="Enter Username">
+            <input id="UL_password" class="entered" placeholder="Enter Password">
+        </div>
+        <div id="UL_line" class="leftline"></div>
+        <div>
+            <button id="UL_enter" class="postpage" onclick="user_login_continue(this)">Continue</button>
+        </div>
+        <p id="UL_return"></p>
+    </div>
+
+    <div class="centered" id="Game of Chess">
+        <p class="title">Game of Chess</p>
+        <p>Play the game of chess!</p>
+        <p>Chess.com is an excellent choice.</p>
+    </div>
+
+    <div class="centered" id="Guest Book" >
+        <p class="title">Guest Book</p>
+        <p>Add your own comment here.</p>
+        <div>
+            <input id="GB_username" class="entered" placeholder="Enter Name">
+            <input id="GB_comment" class="entered" placeholder="Enter Comment">
+        </div>
+        
+        <div class="leftline"></div>
+        <div>
+            <button id="GB_enter" class="postpage" onclick="guest_book_continue()">Continue</button>
+        </div>
+        <p id="GB_return"></p>
+
+        <br><br><br>
+
+        <div>
+            <p class="title">The Latest Community Comments</p>
+            <p id="GB_comments"></p>
+        </div>
+    
+        <!--script src="/js/auth.js"></script-->
+        <script src="/js/navigation.js"></script>
+        <script src="/js/authentication.js"></script>
+        <script src="/js/shopAPI.js"></script>
+        <script src="/js/versionAPI.js"></script>
+        <script src="/js/commentsAPI.js"></script>
+        <script src="/js/emojiloader.js"></script>
+    </body>
+    </html>
+    

@@ -1,0 +1,218 @@
+p {
+  color: black;
+  font-size: 16px;
+}
+
+.centered {
+  position: relative;
+  top: 100px;
+  left: 10%;
+  width: 50%;
+  height: 700px;
+  font-size: 14px;
+}
+
+.custom {
+  height: 100%;
+  margin: 0;
+  font-family: "Verdana";
+  background-color: whitesmoke;
+}
+
+.title {
+  position: relative;
+  width: 50%;
+  font-size: 26px;
+  color: dimgray;
+}
+
+.entered::placeholder {
+  font-size: 14px;
+  text-align: center;
+  color: whitesmoke;
+  background-color: black;
+}
+
+.entered {
+  width: 14%;
+  height: 30px;
+  font-size: 14px;
+  background-color: black;
+  color: whitesmoke;
+}
+
+.postpage {
+  position: relative;
+  top: 10px;
+  right: 0%;
+  width: 17%;
+  height: 43px;
+  background-color: whitesmoke;
+  cursor: pointer;
+  font-size: 21px;
+  color: black;
+}
+
+.postpage:hover {
+  background-color: rgb(255, 158, 226);
+}
+
+.getpage {
+  position: relative;
+  top: 70%;
+  left: 10%;
+  width: 10%;
+  height: 43px;
+  cursor: pointer;
+  font-size: 14px;
+  overflow: hidden;
+  color: whitesmoke;
+  background-color: black;
+  z-index: inherit;
+}
+
+.hiddenpage {
+  position: relative;
+  top: 70%;
+  left: 10%;
+  width: 10%;
+  height: 43px;
+  display: none;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: black;
+  overflow: hidden;
+  color: whitesmoke;
+}
+
+.status {
+  position: relative;
+  top: 70%;
+  left: 10%;
+  width: 10%;
+  overflow: hidden;
+  height: 43px;
+  font-size: 14px;
+  color: black;
+  background-color: whitesmoke;
+}
+
+.topbar {
+  float: left;
+  height: 50px;
+  border: none;
+  outline: none;
+  width: 100%;
+  white-space: nowrap;
+  background-color: dimgray;
+  z-index: 5;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.leftline {
+  position: relative;
+  bottom: 15px;
+  right: 100%;
+  float: right;
+  height: 4px;
+  border: none;
+  margin: 0%;
+  outline: none;
+  width: 60%;
+  background-color: black;
+}
+
+.topline {
+  float: left;
+  height: 4px;
+  border: none;
+  outline: none;
+  width: 100%;
+  background-color: black;
+}
+
+.logo {
+  float: left;
+  padding: 2px 6px;
+  height: 47px;
+  border: none;
+  outline: none;
+  width: 47px;
+  background-color: dimgray;
+}
+
+em {
+  font-family: "Courier New";
+}
+
+.en {
+  display: block;
+  position: relative;
+  left: 0px; /* Set the absolute x position */
+  top: auto;
+}
+
+.en_container {
+  display: grid;
+  row-gap: 5px;
+}
+
+.em_block {
+  font-family: "Courier New";
+  display: block;
+}
+
+.em_block_right {
+  float: right;
+  font-family: "Courier New";
+  display: block;
+}
+
+.div_inline {
+  display: inline-block;
+}
+
+.item {
+  position: relative;
+  right: 20%;
+  float: right;
+  padding: 2px 6px;
+  height: 10px;
+  width: 10px;
+  border: none;
+  outline: none;
+  display: inline;
+  right: auto;
+}
+
+.postitem {
+  position: relative;
+  top: 100px;
+  right: 20%;
+  float: right;
+  width: 17%;
+  height: 43px;
+  cursor: pointer;
+  font-size: 21px;
+  background-color: whitesmoke;
+  color: black;
+}
+
+.postitem:hover {
+  background-color: rgb(255, 158, 226);
+}
+
+.productbar {
+  display: "block";
+  float: left;
+  height: 200px;
+  border: none;
+  outline: none;
+  width: 30%;
+  background-color: dimgray;
+}
